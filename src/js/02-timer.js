@@ -35,8 +35,9 @@ const options = {
             Number(form_hours.textContent) === 0 &&
             Number(form_minutes.textContent) === 0 &&
             Number(form_seconds.textContent) === 0
-          )
+          ) {
             clearInterval(timerId);
+          }
         }, 1000);
       }
       start_button.addEventListener('click', countdown_func);
