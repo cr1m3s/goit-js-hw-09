@@ -7,6 +7,7 @@ button_start.addEventListener('click', body_color);
 let timerId = null;
 
 function body_color() {
+  document.body.style.backgroundColor = getRandomHexColor();
   timerId = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
